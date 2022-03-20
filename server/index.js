@@ -4,6 +4,7 @@ const mysql = require("mysql2");
 const bodyParser = require("body-parser")
 const cors = require("cors")
 
+/*
 const db = mysql.createPool({
     host: "localhost",
     user: "root",
@@ -11,6 +12,17 @@ const db = mysql.createPool({
     database: "reactcrudd"
 
 })
+*/
+
+
+const db = mysql.createPool({
+    host: "sql11.freemysqlhosting.net",
+    user: "sql11480374",
+    password: "4bpI654WEs",
+    database: "sql11480374"
+
+})
+
 app.use(cors())
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: true}))
